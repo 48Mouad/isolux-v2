@@ -1,0 +1,1293 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="ISOLUX, entreprise de menuiserie extérieure en Région wallonne (Belgique), dans la province de Luxembourg : châssis PVC et aluminium, portes d'entrée, portes de garage, vérandas, pergolas, volets et protections solaires. Devis gratuit." />
+    <meta name="robots" content="index,follow" />
+    <meta name="theme-color" content="#1e3a8a" />
+    <link rel="preconnect" href="https://images.unsplash.com" crossorigin />
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin />
+    <title>ISOLUX | Menuiserie extérieure en Région wallonne (Belgique) - Province de Luxembourg</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              brandBlue: "#1e3a8a",
+              brandOrange: "#f97316"
+            }
+          }
+        }
+      };
+    </script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <style>
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        -webkit-font-smoothing: antialiased;
+      }
+      .smooth-scroll {
+        scroll-behavior: smooth;
+      }
+      .fade-in-up {
+        animation: fadeInUp 0.8s ease-out;
+      }
+      @keyframes fadeInUp {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      .hero-bg {
+        background-image: url("https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80");
+        background-size: cover;
+        background-position: center;
+        background-attachment: fixed;
+      }
+      .service-card {
+        transition: all 0.3s ease;
+      }
+      .service-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+      }
+          @media (max-width: 1024px), (prefers-reduced-motion: reduce) {
+        .hero-bg {
+          background-attachment: scroll;
+        }
+        .fade-in-up {
+          animation: none;
+        }
+      }
+    </style>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "HomeAndConstructionBusiness",
+        "name": "ISOLUX",
+        "image": "images/logos/isolux_logo.jpg",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Rue de l'Ermitage 12",
+          "postalCode": "6820",
+          "addressLocality": "Muno",
+          "addressCountry": "BE"
+        },
+        "telephone": "+32472724033",
+        "url": "/"
+      }
+    </script>
+  </head>
+
+  <body class="bg-gray-50 text-gray-800 smooth-scroll">
+    <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 focus:bg-white focus:text-gray-900 focus:px-4 focus:py-2 focus:rounded focus:shadow">Aller au contenu principal</a>
+    <!-- Header -->
+    <header class="bg-white shadow-md fixed w-full z-50">
+      <div class="container mx-auto px-4 md:px-8">
+        <div class="flex justify-between items-center h-20">
+          <a href="#accueil" class="flex items-center">
+            <img loading="eager" decoding="async" fetchpriority="high" src="images/logos/isolux_logo.jpg"
+              alt="ISOLUX Logo"
+              class="h-16 w-auto"
+            />
+          </a>
+
+          <nav class="hidden md:flex space-x-8 font-medium">
+            <a href="#accueil" class="hover:text-blue-600 transition">Accueil</a>
+            <a href="#produits" class="hover:text-blue-600 transition"
+              >Nos Produits</a
+            >
+            <a href="#about" class="hover:text-blue-600 transition">À Propos</a>
+            <a href="#realisations" class="hover:text-blue-600 transition"
+              >Réalisations</a
+            >
+            <a href="#contact" class="hover:text-blue-600 transition">Contact</a>
+          </nav>
+
+          <div class="hidden md:block">
+            <a
+              href="#contact"
+              class="bg-orange-500 hover:bg-orange-600 text-white px-6 py-2 rounded-full font-semibold transition shadow-lg transform hover:scale-105"
+            >
+              <i class="fa-solid fa-file-signature mr-2"></i>Devis Gratuit
+            </a>
+          </div>
+
+          <button
+            id="mobile-menu-btn"
+            class="md:hidden text-gray-600 text-2xl focus:outline-none"
+            aria-label="Ouvrir le menu" aria-expanded="false"
+          >
+            <i class="fa-solid fa-bars"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- Mobile menu -->
+      <div
+        id="mobile-menu"
+        class="hidden md:hidden bg-white border-t border-gray-100 absolute w-full shadow-lg"
+      >
+        <div class="flex flex-col p-4 space-y-3">
+          <a
+            href="#accueil"
+            class="block py-2 text-gray-600 hover:text-blue-600 font-medium"
+            >Accueil</a
+          >
+          <a
+            href="#produits"
+            class="block py-2 text-gray-600 hover:text-blue-600 font-medium"
+            >Nos Produits</a
+          >
+          <a
+            href="#about"
+            class="block py-2 text-gray-600 hover:text-blue-600 font-medium"
+            >À Propos</a
+          >
+          <a
+            href="#realisations"
+            class="block py-2 text-gray-600 hover:text-blue-600 font-medium"
+            >Réalisations</a
+          >
+          <a
+            href="#contact"
+            class="block py-2 text-gray-600 hover:text-blue-600 font-medium"
+            >Contact</a
+          >
+          <a href="#contact" class="block py-2 hover:text-blue-800 text-blue-600 font-bold"
+            >Demander un Devis</a
+          >
+        </div>
+      </div>
+    </header>
+
+    <main id="main-content">
+    <!-- Hero -->
+    <section
+      id="accueil"
+      class="hero-bg relative h-[85vh] flex items-center justify-center"
+    >
+      <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+
+      <div class="container mx-auto px-4 relative z-10 text-center text-white">
+        <span
+          class="inline-block bg-blue-600 text-white px-4 py-1 rounded-full text-sm font-semibold mb-4 tracking-wider uppercase fade-in-up"
+          >Depuis 2010</span
+        >
+
+        <h1
+          class="text-4xl md:text-6xl font-bold mb-6 leading-tight fade-in-up"
+          style="animation-delay: 0.1s"
+        >
+          Menuiserie extérieure en Région wallonne (Belgique) <br />
+          <span class="text-orange-400">Châssis, Portes, Vérandas et Pergolas</span>
+        </h1>
+
+        <p
+          class="text-lg md:text-xl mb-10 max-w-2xl mx-auto text-gray-200 fade-in-up"
+          style="animation-delay: 0.2s"
+        >
+          Spécialiste en châssis, portes, vérandas et protections solaires dans
+          la province du Luxembourg. Transformez votre habitat avec ISOLUX.
+        </p>
+
+        <div
+          class="flex flex-col sm:flex-row justify-center gap-4 fade-in-up"
+          style="animation-delay: 0.3s"
+        >
+          <a
+            href="#produits"
+            class="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg font-bold text-lg transition border-2 border-transparent"
+          >
+            Nos Solutions
+          </a>
+          <a
+            href="#contact"
+            class="bg-transparent hover:bg-white hover:text-gray-900 text-white px-8 py-3 rounded-lg font-bold text-lg transition border-2 border-white"
+          >
+            Contactez-nous
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Quick info -->
+    <div class="bg-blue-900 text-white py-6">
+      <div
+        class="container mx-auto px-4 flex flex-col md:flex-row justify-around items-center gap-4 text-center"
+      >
+        <div class="flex items-center gap-3">
+          <i class="fa-solid fa-medal text-orange-400 text-2xl"></i>
+          <div class="text-left">
+            <p class="font-bold">14 Ans d'Expérience</p>
+            <p class="text-sm text-blue-200">Qualité certifiée</p>
+          </div>
+        </div>
+
+        <div class="flex items-center gap-3">
+          <i class="fa-solid fa-users text-orange-400 text-2xl"></i>
+          <div class="text-left">
+            <p class="font-bold">Service Sur-Mesure</p>
+            <p class="text-sm text-blue-200">Conseil personnalisé</p>
+          </div>
+        </div>
+
+        <div class="flex items-center gap-3">
+          <i class="fa-solid fa-headset text-orange-400 text-2xl"></i>
+          <div class="text-left">
+            <p class="font-bold">Devis Gratuit</p>
+            <p class="text-sm text-blue-200">Réponse rapide</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Produits -->
+    <section id="produits" class="py-16 bg-white">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">
+            Chassis, Portes, Vérandas, Pergolas, Volets et Protections Solaires
+          </h2>
+          <div class="w-20 h-1 bg-orange-500 mx-auto rounded"></div>
+          <p class="mt-4 text-gray-600 max-w-2xl mx-auto">
+            Découvrez notre large gamme de solutions pour l'amélioration de
+            votre habitat, alliant esthétique, isolation et sécurité.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <!-- ✅ PRODUIT 1 -->
+          <div
+            class="service-card bg-white rounded-xl overflow-hidden border border-gray-100 shadow-sm group"
+          >
+            <div class="relative overflow-hidden">
+              <div id="prod1-carousel" class="relative h-48 overflow-hidden rounded-xl">
+                <div class="carousel-track flex h-full transition-transform duration-500 ease-in-out">
+                  <div class="min-w-full h-full">
+                    <img loading="lazy" decoding="async" src="images/chassis/chassis_1.jpg" alt="Châssis 1" class="w-full h-full object-cover">
+                  </div>
+                  <div class="min-w-full h-full">
+                    <img loading="lazy" decoding="async" src="images/chassis/chassis_2.jpg" alt="Châssis 2" class="w-full h-full object-contain">
+                  </div>
+                  <div class="min-w-full h-full">
+                    <img loading="lazy" decoding="async" src="images/chassis/chassis_3.jpg" alt="Châssis 3" class="w-full h-full object-cover">
+                  </div>
+                  <div class="min-w-full h-full">
+                    <img loading="lazy" decoding="async" src="images/chassis/chassis_4.jpg" alt="Châssis 4" class="w-full h-full object-contain">
+                  </div>
+                  <div class="min-w-full h-full">
+                    <img loading="lazy" decoding="async" src="images/chassis/chassis_5.jpg" alt="Châssis 5" class="w-full h-full object-contain">
+                  </div>
+                  <div class="min-w-full h-full">
+                    <img loading="lazy" decoding="async" src="images/chassis/chassis_6.jpg" alt="Châssis 6" class="w-full h-full object-cover">
+                  </div>
+                </div>
+
+                <div class="absolute bottom-0 left-0 bg-blue-600 text-white px-4 py-1 text-sm font-semibold rounded-tr-lg">
+                  Best-Seller
+                </div>
+
+                <button type="button"
+                  class="absolute left-2 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white text-gray-800 rounded-full w-9 h-9 flex items-center justify-center shadow"
+                  data-carousel="prev" aria-label="Previous">
+                  <i class="fa-solid fa-chevron-left text-sm"></i>
+                </button>
+
+                <button type="button"
+                  class="absolute right-2 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white text-gray-800 rounded-full w-9 h-9 flex items-center justify-center shadow"
+                  data-carousel="next" aria-label="Next">
+                  <i class="fa-solid fa-chevron-right text-sm"></i>
+                </button>
+              </div>
+
+              <div class="flex gap-2 p-2 overflow-x-auto bg-gray-50">
+                <img loading="lazy" decoding="async" src="images/chassis/chassis_1.jpg" data-slide="0"
+                  class="h-14 w-20 object-cover rounded-md cursor-pointer border border-gray-200 hover:border-blue-500 transition prod1-thumb" alt="Miniature 1">
+                <img loading="lazy" decoding="async" src="images/chassis/chassis_2.jpg" data-slide="1"
+                  class="h-14 w-20 object-cover rounded-md cursor-pointer border border-gray-200 hover:border-blue-500 transition prod1-thumb" alt="Miniature 2">
+                <img loading="lazy" decoding="async" src="images/chassis/chassis_3.jpg" data-slide="2"
+                  class="h-14 w-20 object-cover rounded-md cursor-pointer border border-gray-200 hover:border-blue-500 transition prod1-thumb" alt="Miniature 3">
+                <img loading="lazy" decoding="async" src="images/chassis/chassis_4.jpg" data-slide="3"
+                  class="h-14 w-20 object-cover rounded-md cursor-pointer border border-gray-200 hover:border-blue-500 transition prod1-thumb" alt="Miniature 4">
+                <img loading="lazy" decoding="async" src="images/chassis/chassis_5.jpg" data-slide="4"
+                  class="h-14 w-20 object-cover rounded-md cursor-pointer border border-gray-200 hover:border-blue-500 transition prod1-thumb" alt="Miniature 5">
+                <img loading="lazy" decoding="async" src="images/chassis/chassis_6.jpg" data-slide="5"
+                  class="h-14 w-20 object-cover rounded-md cursor-pointer border border-gray-200 hover:border-blue-500 transition prod1-thumb" alt="Miniature 6">
+              </div>
+            </div>
+
+            <div class="p-6">
+              <div class="flex items-center gap-3 mb-3">
+                <i class="fa-solid fa-table-cells text-orange-500 text-xl"></i>
+                <h3 class="text-xl font-bold text-gray-800">
+                  Châssis en PVC & ALUMINIUM
+                </h3>
+              </div>
+              <p class="text-gray-600 mb-4">
+                Des châssis performants offrant une isolation thermique et acoustique optimale.
+                Large choix de couleurs.
+              </p>
+              <a href="#contact"
+                class="text-blue-600 font-semibold hover:text-blue-800 flex items-center gap-2">
+                Demander mon devis gratuit <i class="fa-solid fa-arrow-right text-sm"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- ✅ PRODUIT 2 -->
+          <div class="service-card bg-white rounded-xl overflow-hidden border border-gray-100 shadow-sm group">
+            <div class="relative overflow-hidden">
+              <div id="prod2-carousel" class="relative h-48 overflow-hidden rounded-xl">
+                <div class="carousel-track flex h-full transition-transform duration-500 ease-in-out">
+                  <div class="min-w-full h-full"><img loading="lazy" decoding="async" src="images/porte_entrée/porte_entrée_1.jpg" alt="Portes 1" class="w-full h-full object-contain"></div>
+                  <div class="min-w-full h-full"><img loading="lazy" decoding="async" src="images/porte_entrée/porte_entrée_2.jpg" alt="Portes 2" class="w-full h-full object-contain"></div>
+                  <div class="min-w-full h-full"><img loading="lazy" decoding="async" src="images/porte_entrée/porte_entrée_3.jpg" alt="Portes 3" class="w-full h-full object-contain"></div>
+                  <div class="min-w-full h-full"><img loading="lazy" decoding="async" src="images/porte_entrée/porte_entrée_4.jpg" alt="Portes 4" class="w-full h-full object-contain"></div>
+                  <div class="min-w-full h-full"><img loading="lazy" decoding="async" src="images/porte_entrée/porte_entrée_5.jpg" alt="Portes 5" class="w-full h-full object-contain"></div>
+                  <div class="min-w-full h-full"><img loading="lazy" decoding="async" src="images/porte_entrée/porte_entrée_7.jpg" alt="Portes 7" class="w-full h-full object-cover"></div>
+                </div>
+
+                <div class="absolute bottom-0 left-0 bg-blue-600 text-white px-4 py-1 text-sm font-semibold rounded-tr-lg">
+                  Offre du mois
+                </div>
+
+                <button type="button"
+                  class="absolute left-2 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white text-gray-800 rounded-full w-9 h-9 flex items-center justify-center shadow"
+                  data-carousel="prev" aria-label="Previous">
+                  <i class="fa-solid fa-chevron-left text-sm"></i>
+                </button>
+
+                <button type="button"
+                  class="absolute right-2 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white text-gray-800 rounded-full w-9 h-9 flex items-center justify-center shadow"
+                  data-carousel="next" aria-label="Next">
+                  <i class="fa-solid fa-chevron-right text-sm"></i>
+                </button>
+              </div>
+
+              <div class="flex gap-2 p-2 overflow-x-auto bg-gray-50">
+                <img alt="Miniature 1 - Porte d'entrée sur mesure en province de Luxembourg, Belgique" loading="lazy" decoding="async" src="images/porte_entrée/porte_entrée_1.jpg" data-slide="0" class="h-14 w-20 object-cover rounded-md cursor-pointer border border-gray-200 hover:border-blue-500 transition prod2-thumb">
+                <img alt="Miniature 2 - Porte d'entrée sur mesure en province de Luxembourg, Belgique" loading="lazy" decoding="async" src="images/porte_entrée/porte_entrée_2.jpg" data-slide="1" class="h-14 w-20 object-cover rounded-md cursor-pointer border border-gray-200 hover:border-blue-500 transition prod2-thumb">
+                <img alt="Miniature 3 - Porte d'entrée sur mesure en province de Luxembourg, Belgique" loading="lazy" decoding="async" src="images/porte_entrée/porte_entrée_3.jpg" data-slide="2" class="h-14 w-20 object-cover rounded-md cursor-pointer border border-gray-200 hover:border-blue-500 transition prod2-thumb">
+                <img alt="Miniature 4 - Porte d'entrée sur mesure en province de Luxembourg, Belgique" loading="lazy" decoding="async" src="images/porte_entrée/porte_entrée_4.jpg" data-slide="3" class="h-14 w-20 object-cover rounded-md cursor-pointer border border-gray-200 hover:border-blue-500 transition prod2-thumb">
+                <img alt="Miniature 5 - Porte d'entrée sur mesure en province de Luxembourg, Belgique" loading="lazy" decoding="async" src="images/porte_entrée/porte_entrée_5.jpg" data-slide="4" class="h-14 w-20 object-cover rounded-md cursor-pointer border border-gray-200 hover:border-blue-500 transition prod2-thumb">
+                <img alt="Miniature 7 - Porte d'entrée sur mesure en province de Luxembourg, Belgique" loading="lazy" decoding="async" src="images/porte_entrée/porte_entrée_7.jpg" data-slide="5" class="h-14 w-20 object-cover rounded-md cursor-pointer border border-gray-200 hover:border-blue-500 transition prod2-thumb">
+              </div>
+            </div>
+
+            <div class="p-6">
+              <div class="flex items-center gap-3 mb-3">
+                <i class="fa-solid fa-door-open text-orange-500 text-xl"></i>
+                <h3 class="text-xl font-bold text-gray-800">Portes d'entrée</h3>
+              </div>
+              <p class="text-gray-600 mb-4">
+                Sécurité et élégance. Nos portes d'entrée accueillent vos invités tout en protégeant votre foyer.
+              </p>
+              <a href="#contact" class="text-blue-600 font-semibold hover:text-blue-800 flex items-center gap-2">
+                Demander mon devis gratuit <i class="fa-solid fa-arrow-right text-sm"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- ✅ PRODUIT 3 -->
+          <div class="service-card bg-white rounded-xl overflow-hidden border border-gray-100 shadow-sm group">
+            <div class="relative overflow-hidden">
+              <div id="prod3-carousel" class="relative h-48 overflow-hidden rounded-xl">
+                <div class="carousel-track flex h-full transition-transform duration-500 ease-in-out">
+                  <div class="min-w-full h-full"><img loading="lazy" decoding="async" src="images/porte_garage/garage_2.jpg" alt="porte de garage sectionnelle motorisée Luxembourg" class="w-full h-full object-contain"></div>
+                  <div class="min-w-full h-full"><img alt="Porte de garage sectionnelle motorisée en province de Luxembourg, Belgique - photo 3" loading="lazy" decoding="async" src="images/porte_garage/garage_3.jpg" class="w-full h-full object-contain"></div>
+                  <div class="min-w-full h-full"><img alt="Porte de garage sectionnelle motorisée en province de Luxembourg, Belgique - photo 4" loading="lazy" decoding="async" src="images/porte_garage/garage_4.jpg" class="w-full h-full object-contain"></div>
+                  <div class="min-w-full h-full"><img alt="Porte de garage sectionnelle motorisée en province de Luxembourg, Belgique - photo 5" loading="lazy" decoding="async" src="images/porte_garage/garage_5.jpg" class="w-full h-full object-contain"></div>
+                  <div class="min-w-full h-full"><img alt="Porte de garage sectionnelle motorisée en province de Luxembourg, Belgique - photo 6" loading="lazy" decoding="async" src="images/porte_garage/garage_6.jpg" class="w-full h-full object-contain"></div>
+                </div>
+
+                <div class="absolute bottom-0 left-0 bg-blue-600 text-white px-4 py-1 text-sm font-semibold rounded-tr-lg">
+                  Meilleur prix
+                </div>
+
+                <button type="button"
+                  class="absolute left-2 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white text-gray-800 rounded-full w-9 h-9 flex items-center justify-center shadow"
+                  data-carousel="prev">
+                  <i class="fa-solid fa-chevron-left text-sm"></i>
+                </button>
+
+                <button type="button"
+                  class="absolute right-2 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white text-gray-800 rounded-full w-9 h-9 flex items-center justify-center shadow"
+                  data-carousel="next">
+                  <i class="fa-solid fa-chevron-right text-sm"></i>
+                </button>
+              </div>
+
+              <div class="flex gap-2 p-2 overflow-x-auto bg-gray-50">
+                <img alt="Miniature 2 - Porte de garage sectionnelle motorisée en province de Luxembourg, Belgique" loading="lazy" decoding="async" src="images/porte_garage/garage_2.jpg" data-slide="1" class="h-14 w-20 object-cover rounded-md cursor-pointer border border-gray-200 hover:border-blue-500 transition prod3-thumb">
+                <img alt="Miniature 3 - Porte de garage sectionnelle motorisée en province de Luxembourg, Belgique" loading="lazy" decoding="async" src="images/porte_garage/garage_3.jpg" data-slide="2" class="h-14 w-20 object-cover rounded-md cursor-pointer border border-gray-200 hover:border-blue-500 transition prod3-thumb">
+                <img alt="Miniature 4 - Porte de garage sectionnelle motorisée en province de Luxembourg, Belgique" loading="lazy" decoding="async" src="images/porte_garage/garage_4.jpg" data-slide="3" class="h-14 w-20 object-cover rounded-md cursor-pointer border border-gray-200 hover:border-blue-500 transition prod3-thumb">
+                <img alt="Miniature 5 - Porte de garage sectionnelle motorisée en province de Luxembourg, Belgique" loading="lazy" decoding="async" src="images/porte_garage/garage_5.jpg" data-slide="4" class="h-14 w-20 object-cover rounded-md cursor-pointer border border-gray-200 hover:border-blue-500 transition prod3-thumb">
+                <img alt="Miniature 6 - Porte de garage sectionnelle motorisée en province de Luxembourg, Belgique" loading="lazy" decoding="async" src="images/porte_garage/garage_6.jpg" data-slide="5" class="h-14 w-20 object-cover rounded-md cursor-pointer border border-gray-200 hover:border-blue-500 transition prod3-thumb">
+              </div>
+            </div>
+
+            <div class="p-6">
+              <div class="flex items-center gap-3 mb-3">
+                <i class="fa-solid fa-warehouse text-orange-500 text-xl"></i>
+                <h3 class="text-xl font-bold text-gray-800">Portes de Garage</h3>
+              </div>
+              <p class="text-gray-600 mb-4">
+                Motorisées, sectionnelles ou basculantes. Praticité et robustesse pour votre garage.
+              </p>
+              <a href="#contact" class="text-blue-600 font-semibold hover:text-blue-800 flex items-center gap-2">
+                Demander mon devis gratuit <i class="fa-solid fa-arrow-right text-sm"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- ✅ PRODUIT 4 -->
+          <div class="service-card bg-white rounded-xl overflow-hidden border border-gray-100 shadow-sm group">
+            <div class="relative overflow-hidden">
+              <div id="prod4-carousel" class="relative h-48 overflow-hidden rounded-xl">
+                <div class="carousel-track flex h-full transition-transform duration-500 ease-in-out">
+                  <div class="min-w-full h-full"><img loading="lazy" decoding="async" src="images/protections_solaire/solaire_1.jpg" alt="store exterieur et protection solaire maison Luxembourg" class="w-full h-full object-contain"></div>
+                  <div class="min-w-full h-full"><img alt="Protection solaire extérieure et store terrasse en province de Luxembourg, Belgique - photo 2" loading="lazy" decoding="async" src="images/protections_solaire/solaire_2.jpg" class="w-full h-full object-contain"></div>
+                  <div class="min-w-full h-full"><img alt="Protection solaire extérieure et store terrasse en province de Luxembourg, Belgique - photo 3" loading="lazy" decoding="async" src="images/protections_solaire/solaire_3.jpg" class="w-full h-full object-contain"></div>
+                  <div class="min-w-full h-full"><img alt="Protection solaire extérieure et store terrasse en province de Luxembourg, Belgique - photo 4" loading="lazy" decoding="async" src="images/protections_solaire/solaire_4.jpg" class="w-full h-full object-contain"></div>
+                  <div class="min-w-full h-full"><img alt="Protection solaire extérieure et store terrasse en province de Luxembourg, Belgique - photo 5" loading="lazy" decoding="async" src="images/protections_solaire/solaire_5.jpg" class="w-full h-full object-contain"></div>
+                </div>
+
+                <div class="absolute bottom-0 left-0 bg-blue-600 text-white px-4 py-1 text-sm font-semibold rounded-tr-lg">
+                  Premier choix
+                </div>
+
+                <button type="button"
+                  class="absolute left-2 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white text-gray-800 rounded-full w-9 h-9 flex items-center justify-center shadow"
+                  data-carousel="prev">
+                  <i class="fa-solid fa-chevron-left text-sm"></i>
+                </button>
+
+                <button type="button"
+                  class="absolute right-2 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white text-gray-800 rounded-full w-9 h-9 flex items-center justify-center shadow"
+                  data-carousel="next">
+                  <i class="fa-solid fa-chevron-right text-sm"></i>
+                </button>
+              </div>
+
+              <div class="flex gap-2 p-2 overflow-x-auto bg-gray-50">
+                <img alt="Miniature 1 - Protection solaire extérieure et store terrasse en province de Luxembourg, Belgique" loading="lazy" decoding="async" src="images/protections_solaire/solaire_1.jpg" data-slide="0" class="h-14 w-20 object-cover rounded-md cursor-pointer border border-gray-200 hover:border-blue-500 transition prod4-thumb">
+                <img alt="Miniature 2 - Protection solaire extérieure et store terrasse en province de Luxembourg, Belgique" loading="lazy" decoding="async" src="images/protections_solaire/solaire_2.jpg" data-slide="1" class="h-14 w-20 object-cover rounded-md cursor-pointer border border-gray-200 hover:border-blue-500 transition prod4-thumb">
+                <img alt="Miniature 3 - Protection solaire extérieure et store terrasse en province de Luxembourg, Belgique" loading="lazy" decoding="async" src="images/protections_solaire/solaire_3.jpg" data-slide="2" class="h-14 w-20 object-cover rounded-md cursor-pointer border border-gray-200 hover:border-blue-500 transition prod4-thumb">
+                <img alt="Miniature 4 - Protection solaire extérieure et store terrasse en province de Luxembourg, Belgique" loading="lazy" decoding="async" src="images/protections_solaire/solaire_4.jpg" data-slide="3" class="h-14 w-20 object-cover rounded-md cursor-pointer border border-gray-200 hover:border-blue-500 transition prod4-thumb">
+                <img alt="Miniature 5 - Protection solaire extérieure et store terrasse en province de Luxembourg, Belgique" loading="lazy" decoding="async" src="images/protections_solaire/solaire_5.jpg" data-slide="4" class="h-14 w-20 object-cover rounded-md cursor-pointer border border-gray-200 hover:border-blue-500 transition prod4-thumb">
+              </div>
+            </div>
+
+            <div class="p-6">
+              <div class="flex items-center gap-3 mb-3">
+                <i class="fa-solid fa-sun text-orange-500 text-xl"></i>
+                <h3 class="text-xl font-bold text-gray-800">Protections solaires</h3>
+              </div>
+              <p class="text-gray-600 mb-4">
+                Stores, auvents, pergolas rétractables… Des solutions sur mesure pour l’ombre, le confort et le style.
+              </p>
+              <a href="#contact" class="text-blue-600 font-semibold hover:text-blue-800 flex items-center gap-2">
+                Demander mon devis gratuit <i class="fa-solid fa-arrow-right text-sm"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- ✅ PRODUIT 5 -->
+          <div class="service-card bg-white rounded-xl overflow-hidden border border-gray-100 shadow-sm group">
+            <div class="relative overflow-hidden">
+              <div id="prod5-carousel" class="relative h-48 overflow-hidden rounded-xl">
+                <div class="carousel-track flex h-full transition-transform duration-500 ease-in-out">
+                  <div class="min-w-full h-full"><img loading="lazy" decoding="async" src="images/volets/volet_1.jpg" alt="volets roulants aluminium isolants province de Luxembourg" class="w-full h-full object-contain"></div>
+                  <div class="min-w-full h-full"><img alt="Volets roulants aluminium en province de Luxembourg, Belgique - photo 2" loading="lazy" decoding="async" src="images/volets/volet_2.jpg" class="w-full h-full object-contain"></div>
+                  <div class="min-w-full h-full"><img alt="Volets roulants aluminium en province de Luxembourg, Belgique - photo 3" loading="lazy" decoding="async" src="images/volets/volet_3.jpg" class="w-full h-full object-contain"></div>
+                  <div class="min-w-full h-full"><img alt="Volets roulants aluminium en province de Luxembourg, Belgique - photo 4" loading="lazy" decoding="async" src="images/volets/volet_4.jpg" class="w-full h-full object-contain"></div>
+                  <div class="min-w-full h-full"><img alt="Volets roulants aluminium en province de Luxembourg, Belgique - photo 5" loading="lazy" decoding="async" src="images/volets/volet_5.jpg" class="w-full h-full object-contain"></div>
+                </div>
+
+                <div class="absolute bottom-0 left-0 bg-blue-600 text-white px-4 py-1 text-sm font-semibold rounded-tr-lg">
+                  Nouveautés
+                </div>
+
+                <button type="button"
+                  class="absolute left-2 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white text-gray-800 rounded-full w-9 h-9 flex items-center justify-center shadow"
+                  data-carousel="prev">
+                  <i class="fa-solid fa-chevron-left text-sm"></i>
+                </button>
+
+                <button type="button"
+                  class="absolute right-2 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white text-gray-800 rounded-full w-9 h-9 flex items-center justify-center shadow"
+                  data-carousel="next">
+                  <i class="fa-solid fa-chevron-right text-sm"></i>
+                </button>
+              </div>
+
+              <div class="flex gap-2 p-2 overflow-x-auto bg-gray-50">
+                <img alt="Miniature 1 - Volets roulants aluminium en province de Luxembourg, Belgique" loading="lazy" decoding="async" src="images/volets/volet_1.jpg" data-slide="0" class="h-14 w-20 object-cover rounded-md cursor-pointer border border-gray-200 hover:border-blue-500 transition prod5-thumb">
+                <img alt="Miniature 2 - Volets roulants aluminium en province de Luxembourg, Belgique" loading="lazy" decoding="async" src="images/volets/volet_2.jpg" data-slide="1" class="h-14 w-20 object-cover rounded-md cursor-pointer border border-gray-200 hover:border-blue-500 transition prod5-thumb">
+                <img alt="Miniature 3 - Volets roulants aluminium en province de Luxembourg, Belgique" loading="lazy" decoding="async" src="images/volets/volet_3.jpg" data-slide="2" class="h-14 w-20 object-cover rounded-md cursor-pointer border border-gray-200 hover:border-blue-500 transition prod5-thumb">
+                <img alt="Miniature 4 - Volets roulants aluminium en province de Luxembourg, Belgique" loading="lazy" decoding="async" src="images/volets/volet_4.jpg" data-slide="3" class="h-14 w-20 object-cover rounded-md cursor-pointer border border-gray-200 hover:border-blue-500 transition prod5-thumb">
+                <img alt="Miniature 5 - Volets roulants aluminium en province de Luxembourg, Belgique" loading="lazy" decoding="async" src="images/volets/volet_5.jpg" data-slide="4" class="h-14 w-20 object-cover rounded-md cursor-pointer border border-gray-200 hover:border-blue-500 transition prod5-thumb">
+              </div>
+            </div>
+
+            <div class="p-6">
+              <div class="flex items-center gap-3 mb-3">
+                <i class="fa-solid fa-window-maximize text-orange-500 text-xl"></i>
+                <h3 class="text-xl font-bold text-gray-800">Volets</h3>
+              </div>
+              <p class="text-gray-600 mb-4">
+                Protégez et isolez votre maison avec nos volets modernes et résistants.
+                Sécurité, confort et élégance.
+              </p>
+              <a href="#contact" class="text-blue-600 font-semibold hover:text-blue-800 flex items-center gap-2">
+                Demander mon devis gratuit <i class="fa-solid fa-arrow-right text-sm"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- ✅ PRODUIT 6 -->
+          <div class="service-card bg-white rounded-xl overflow-hidden border border-gray-100 shadow-sm group">
+            <div class="relative overflow-hidden">
+              <div id="prod6-carousel" class="relative h-48 overflow-hidden rounded-xl">
+                <div class="carousel-track flex h-full transition-transform duration-500 ease-in-out">
+                  <div class="min-w-full h-full"><img loading="lazy" decoding="async" src="images/pergolas/pergola_1.jpg" alt="pergola bioclimatique aluminium sur mesure Luxembourg" class="w-full h-full object-contain"></div>
+                  <div class="min-w-full h-full"><img alt="Pergola bioclimatique sur mesure en province de Luxembourg, Belgique - photo 2" loading="lazy" decoding="async" src="images/pergolas/pergola_2.jpg" class="w-full h-full object-contain"></div>
+                  <div class="min-w-full h-full"><img alt="Pergola bioclimatique sur mesure en province de Luxembourg, Belgique - photo 3" loading="lazy" decoding="async" src="images/pergolas/pergola_3.jpg" class="w-full h-full object-contain"></div>
+                  <div class="min-w-full h-full"><img alt="Pergola bioclimatique sur mesure en province de Luxembourg, Belgique - photo 4" loading="lazy" decoding="async" src="images/pergolas/pergola_4.jpg" class="w-full h-full object-contain"></div>
+                  <div class="min-w-full h-full"><img alt="Pergola bioclimatique sur mesure en province de Luxembourg, Belgique - photo 5" loading="lazy" decoding="async" src="images/pergolas/pergola_5.jpg" class="w-full h-full object-contain"></div>
+                </div>
+
+                <div class="absolute bottom-0 left-0 bg-blue-600 text-white px-4 py-1 text-sm font-semibold rounded-tr-lg">
+                  Installation rapide
+                </div>
+
+                <button type="button"
+                  class="absolute left-2 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white text-gray-800 rounded-full w-9 h-9 flex items-center justify-center shadow"
+                  data-carousel="prev">
+                  <i class="fa-solid fa-chevron-left text-sm"></i>
+                </button>
+
+                <button type="button"
+                  class="absolute right-2 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white text-gray-800 rounded-full w-9 h-9 flex items-center justify-center shadow"
+                  data-carousel="next">
+                  <i class="fa-solid fa-chevron-right text-sm"></i>
+                </button>
+              </div>
+
+              <div class="flex gap-2 p-2 overflow-x-auto bg-gray-50">
+                <img alt="Miniature 1 - Pergola bioclimatique sur mesure en province de Luxembourg, Belgique" loading="lazy" decoding="async" src="images/pergolas/pergola_1.jpg" data-slide="0" class="h-14 w-20 object-cover rounded-md cursor-pointer border border-gray-200 hover:border-blue-500 transition prod6-thumb">
+                <img alt="Miniature 2 - Pergola bioclimatique sur mesure en province de Luxembourg, Belgique" loading="lazy" decoding="async" src="images/pergolas/pergola_2.jpg" data-slide="1" class="h-14 w-20 object-cover rounded-md cursor-pointer border border-gray-200 hover:border-blue-500 transition prod6-thumb">
+                <img alt="Miniature 3 - Pergola bioclimatique sur mesure en province de Luxembourg, Belgique" loading="lazy" decoding="async" src="images/pergolas/pergola_3.jpg" data-slide="2" class="h-14 w-20 object-cover rounded-md cursor-pointer border border-gray-200 hover:border-blue-500 transition prod6-thumb">
+                <img alt="Miniature 4 - Pergola bioclimatique sur mesure en province de Luxembourg, Belgique" loading="lazy" decoding="async" src="images/pergolas/pergola_4.jpg" data-slide="3" class="h-14 w-20 object-cover rounded-md cursor-pointer border border-gray-200 hover:border-blue-500 transition prod6-thumb">
+                <img alt="Miniature 5 - Pergola bioclimatique sur mesure en province de Luxembourg, Belgique" loading="lazy" decoding="async" src="images/pergolas/pergola_5.jpg" data-slide="4" class="h-14 w-20 object-cover rounded-md cursor-pointer border border-gray-200 hover:border-blue-500 transition prod6-thumb">
+              </div>
+            </div>
+
+            <div class="p-6">
+              <div class="flex items-center gap-3 mb-3">
+                <i class="fa-solid fa-umbrella-beach text-orange-500 text-xl"></i>
+                <h3 class="text-xl font-bold text-gray-800">Pergolas</h3>
+              </div>
+              <p class="text-gray-600 mb-4">
+                Transformez votre espace extérieur avec nos pergolas élégantes et durables.
+                Ombrage, confort et style.
+              </p>
+              <a href="#contact" class="text-blue-600 font-semibold hover:text-blue-800 flex items-center gap-2">
+                Demander mon devis gratuit <i class="fa-solid fa-arrow-right text-sm"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- ✅ PRODUIT 7 -->
+          <div class="service-card bg-white rounded-xl overflow-hidden border border-gray-100 shadow-sm group">
+            <div class="relative overflow-hidden">
+              <div id="prod7-carousel" class="relative h-48 overflow-hidden rounded-xl">
+                <div class="carousel-track flex h-full transition-transform duration-500 ease-in-out">
+                  <div class="min-w-full h-full"><img loading="lazy" decoding="async" src="images/verandas/veranda_1.jpg" alt="veranda moderne extension maison province de Luxembourg" class="w-full h-full object-contain"></div>
+                  <div class="min-w-full h-full"><img alt="Véranda sur mesure en province de Luxembourg, Belgique - photo 2" loading="lazy" decoding="async" src="images/verandas/veranda_2.jpg" class="w-full h-full object-contain"></div>
+                  <div class="min-w-full h-full"><img alt="Véranda sur mesure en province de Luxembourg, Belgique - photo 3" loading="lazy" decoding="async" src="images/verandas/veranda_3.jpg" class="w-full h-full object-contain"></div>
+                  <div class="min-w-full h-full"><img alt="Véranda sur mesure en province de Luxembourg, Belgique - photo 4" loading="lazy" decoding="async" src="images/verandas/veranda_4.jpg" class="w-full h-full object-contain"></div>
+                  <div class="min-w-full h-full"><img alt="Véranda sur mesure en province de Luxembourg, Belgique - photo 5" loading="lazy" decoding="async" src="images/verandas/veranda_5.jpg" class="w-full h-full object-contain"></div>
+                </div>
+
+                <div class="absolute bottom-0 left-0 bg-blue-600 text-white px-4 py-1 text-sm font-semibold rounded-tr-lg">
+                  Confort toute l'année
+                </div>
+
+                <button type="button"
+                  class="absolute left-2 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white text-gray-800 rounded-full w-9 h-9 flex items-center justify-center shadow"
+                  data-carousel="prev">
+                  <i class="fa-solid fa-chevron-left text-sm"></i>
+                </button>
+
+                <button type="button"
+                  class="absolute right-2 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white text-gray-800 rounded-full w-9 h-9 flex items-center justify-center shadow"
+                  data-carousel="next">
+                  <i class="fa-solid fa-chevron-right text-sm"></i>
+                </button>
+              </div>
+
+              <div class="flex gap-2 p-2 overflow-x-auto bg-gray-50">
+                <img alt="Miniature 1 - Véranda sur mesure en province de Luxembourg, Belgique" loading="lazy" decoding="async" src="images/verandas/veranda_1.jpg" data-slide="0" class="h-14 w-20 object-cover rounded-md cursor-pointer border border-gray-200 hover:border-blue-500 transition prod7-thumb">
+                <img alt="Miniature 2 - Véranda sur mesure en province de Luxembourg, Belgique" loading="lazy" decoding="async" src="images/verandas/veranda_2.jpg" data-slide="1" class="h-14 w-20 object-cover rounded-md cursor-pointer border border-gray-200 hover:border-blue-500 transition prod7-thumb">
+                <img alt="Miniature 3 - Véranda sur mesure en province de Luxembourg, Belgique" loading="lazy" decoding="async" src="images/verandas/veranda_3.jpg" data-slide="2" class="h-14 w-20 object-cover rounded-md cursor-pointer border border-gray-200 hover:border-blue-500 transition prod7-thumb">
+                <img alt="Miniature 4 - Véranda sur mesure en province de Luxembourg, Belgique" loading="lazy" decoding="async" src="images/verandas/veranda_4.jpg" data-slide="3" class="h-14 w-20 object-cover rounded-md cursor-pointer border border-gray-200 hover:border-blue-500 transition prod7-thumb">
+                <img alt="Miniature 5 - Véranda sur mesure en province de Luxembourg, Belgique" loading="lazy" decoding="async" src="images/verandas/veranda_5.jpg" data-slide="4" class="h-14 w-20 object-cover rounded-md cursor-pointer border border-gray-200 hover:border-blue-500 transition prod7-thumb">
+              </div>
+            </div>
+
+            <div class="p-6">
+              <div class="flex items-center gap-3 mb-3">
+                <i class="fa-solid fa-house-chimney-window text-orange-500 text-xl"></i>
+                <h3 class="text-xl font-bold text-gray-800">Vérandas</h3>
+              </div>
+              <p class="text-gray-600 mb-4">
+                Apportez lumière et espace à votre maison avec nos vérandas élégantes.
+                Une extension parfaite toute l’année.
+              </p>
+              <a href="#contact" class="text-blue-600 font-semibold hover:text-blue-800 flex items-center gap-2">
+                Demander mon devis gratuit <i class="fa-solid fa-arrow-right text-sm"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- ✅ PRODUIT 8 -->
+          <div class="service-card bg-white rounded-xl overflow-hidden border border-gray-100 shadow-sm group">
+            <div class="relative overflow-hidden">
+              <div class="absolute bottom-0 left-0 bg-blue-600 text-white px-4 py-1 text-sm font-semibold rounded-tr-lg">
+                Protection anti-insectes
+              </div>
+
+              <div id="prod8-carousel" class="relative h-48 overflow-hidden rounded-xl">
+                <div class="carousel-track flex h-full transition-transform duration-500 ease-in-out">
+                  <div class="min-w-full h-full"><img loading="lazy" decoding="async" src="images/moustiquaires/moustiquaire_1.jpg" alt="moustiquaire fenêtre et porte sur mesure Luxembourg" class="w-full h-full object-contain"></div>
+                  <div class="min-w-full h-full"><img alt="Moustiquaire fenêtre et porte en province de Luxembourg, Belgique - photo 2" loading="lazy" decoding="async" src="images/moustiquaires/moustiquaire_2.jpg" class="w-full h-full object-contain"></div>
+                  <div class="min-w-full h-full"><img alt="Moustiquaire fenêtre et porte en province de Luxembourg, Belgique - photo 3" loading="lazy" decoding="async" src="images/moustiquaires/moustiquaire_3.jpg" class="w-full h-full object-contain"></div>
+                  <div class="min-w-full h-full"><img alt="Moustiquaire fenêtre et porte en province de Luxembourg, Belgique - photo 4" loading="lazy" decoding="async" src="images/moustiquaires/moustiquaire_4.jpg" class="w-full h-full object-contain"></div>
+                  <div class="min-w-full h-full"><img alt="Moustiquaire fenêtre et porte en province de Luxembourg, Belgique - photo 5" loading="lazy" decoding="async" src="images/moustiquaires/moustiquaire_5.jpg" class="w-full h-full object-contain"></div>
+                </div>
+
+                <button type="button"
+                  class="absolute left-2 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white text-gray-800 rounded-full w-9 h-9 flex items-center justify-center shadow"
+                  data-carousel="prev">
+                  <i class="fa-solid fa-chevron-left text-sm"></i>
+                </button>
+
+                <button type="button"
+                  class="absolute right-2 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white text-gray-800 rounded-full w-9 h-9 flex items-center justify-center shadow"
+                  data-carousel="next">
+                  <i class="fa-solid fa-chevron-right text-sm"></i>
+                </button>
+              </div>
+
+              <div class="flex gap-2 p-2 overflow-x-auto bg-gray-50">
+                <img alt="Miniature 1 - Moustiquaire fenêtre et porte en province de Luxembourg, Belgique" loading="lazy" decoding="async" src="images/moustiquaires/moustiquaire_1.jpg" data-slide="0" class="h-14 w-20 object-cover rounded-md cursor-pointer border border-gray-200 hover:border-blue-500 transition prod8-thumb">
+                <img alt="Miniature 2 - Moustiquaire fenêtre et porte en province de Luxembourg, Belgique" loading="lazy" decoding="async" src="images/moustiquaires/moustiquaire_2.jpg" data-slide="1" class="h-14 w-20 object-cover rounded-md cursor-pointer border border-gray-200 hover:border-blue-500 transition prod8-thumb">
+                <img alt="Miniature 3 - Moustiquaire fenêtre et porte en province de Luxembourg, Belgique" loading="lazy" decoding="async" src="images/moustiquaires/moustiquaire_3.jpg" data-slide="2" class="h-14 w-20 object-cover rounded-md cursor-pointer border border-gray-200 hover:border-blue-500 transition prod8-thumb">
+                <img alt="Miniature 4 - Moustiquaire fenêtre et porte en province de Luxembourg, Belgique" loading="lazy" decoding="async" src="images/moustiquaires/moustiquaire_4.jpg" data-slide="3" class="h-14 w-20 object-cover rounded-md cursor-pointer border border-gray-200 hover:border-blue-500 transition prod8-thumb">
+                <img alt="Miniature 5 - Moustiquaire fenêtre et porte en province de Luxembourg, Belgique" loading="lazy" decoding="async" src="images/moustiquaires/moustiquaire_5.jpg" data-slide="4" class="h-14 w-20 object-cover rounded-md cursor-pointer border border-gray-200 hover:border-blue-500 transition prod8-thumb">
+              </div>
+            </div>
+
+            <div class="p-6">
+              <div class="flex items-center gap-3 mb-3">
+                <i class="fa-solid fa-bug text-orange-500 text-xl"></i>
+                <h3 class="text-xl font-bold text-gray-800">Moustiquaires</h3>
+              </div>
+              <p class="text-gray-600 mb-4">
+                Profitez de l’air frais tout en restant protégé des moustiques et insectes.
+                Ventilation optimale, tranquillité garantie.
+              </p>
+              <a href="#contact" class="text-blue-600 font-semibold hover:text-blue-800 flex items-center gap-2">
+                Demander mon devis gratuit <i class="fa-solid fa-arrow-right text-sm"></i>
+              </a>
+            </div>
+          </div>
+        </div><!-- ✅ fin grid -->
+      </div><!-- ✅ fin container -->
+    </section>
+
+    <!-- About -->
+    <section id="about" class="py-16 bg-gray-100">
+      <div class="container mx-auto px-4">
+        <div class="flex flex-col md:flex-row items-center gap-12">
+          <div class="w-full md:w-1/2">
+            <img loading="lazy" decoding="async" src="images/logos/isolux_logo.jpg"
+              alt="ISOLUX"
+              class="rounded-lg shadow-xl w-3/4 mx-auto"
+            />
+          </div>
+
+          <div class="w-full md:w-1/2">
+            <h4 class="text-orange-500 font-bold uppercase tracking-wide mb-2">
+              Qui sommes-nous ?
+            </h4>
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6">
+              ISOLUX : Votre Partenaire de Confiance
+            </h2>
+            <p class="text-gray-600 mb-4 leading-relaxed">
+              Implantée dans la province du Luxembourg, la société
+              <strong>ISOLUX</strong> cumule une expérience significative depuis
+              sa fondation en 2010. Nous nous distinguons dans le domaine de la
+              menuiserie extérieure par notre engagement envers la qualité et la
+              satisfaction client.
+            </p>
+            <p class="text-gray-600 mb-6 leading-relaxed">
+              Que ce soit pour une nouvelle construction ou une rénovation,
+              notre équipe d'experts vous accompagne de la conception à la pose.
+              Nous sélectionnons les meilleurs fournisseurs pour vous garantir
+              des produits durables, esthétiques et performants énergétiquement.
+            </p>
+
+            <ul class="space-y-3">
+              <li class="flex items-center gap-3">
+                <i class="fa-solid fa-check-circle text-green-500"></i>
+                <span>Personnel qualifié et expérimenté</span>
+              </li>
+              <li class="flex items-center gap-3">
+                <i class="fa-solid fa-check-circle text-green-500"></i>
+                <span>Matériaux haut de gamme (PVC, Alu, Bois)</span>
+              </li>
+              <li class="flex items-center gap-3">
+                <i class="fa-solid fa-check-circle text-green-500"></i>
+                <span>Service après-vente réactif</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SEO local -->
+    <section class="py-10 bg-gray-100">
+      <div class="container mx-auto px-4">
+        <div class="max-w-5xl mx-auto rounded-2xl border border-blue-100 bg-gradient-to-br from-white via-blue-50 to-orange-50 p-6 md:p-10 shadow-sm">
+          <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-start">
+            <div>
+              <p class="text-sm font-semibold uppercase tracking-wider text-blue-700 mb-3">
+                Zone d'intervention
+              </p>
+              <h2 class="text-2xl md:text-3xl font-bold text-gray-900 mb-4 leading-tight">
+                Menuiserie extérieure en Région wallonne, province de Luxembourg (Belgique)
+              </h2>
+              <p class="text-gray-700 leading-relaxed mb-4">
+                ISOLUX réalise vos projets de rénovation et de construction:
+                châssis PVC et aluminium, portes d'entrée, portes de garage,
+                vérandas, pergolas, volets et protections solaires.
+              </p>
+              <a
+                href="#contact"
+                class="inline-flex items-center gap-2 text-blue-700 font-semibold hover:text-blue-900 transition"
+              >
+                Demander un devis gratuit <i class="fa-solid fa-arrow-right text-xs"></i>
+              </a>
+            </div>
+
+            <div class="space-y-5">
+              <div>
+                <p class="text-sm font-semibold text-gray-800 mb-2">Villes desservies</p>
+                <div class="flex flex-wrap gap-2">
+                  <span class="px-3 py-1 rounded-full bg-white border border-gray-200 text-sm text-gray-700">Arlon</span>
+                  <span class="px-3 py-1 rounded-full bg-white border border-gray-200 text-sm text-gray-700">Bastogne</span>
+                  <span class="px-3 py-1 rounded-full bg-white border border-gray-200 text-sm text-gray-700">Libramont</span>
+                  <span class="px-3 py-1 rounded-full bg-white border border-gray-200 text-sm text-gray-700">Marche-en-Famenne</span>
+                  <span class="px-3 py-1 rounded-full bg-white border border-gray-200 text-sm text-gray-700">Virton</span>
+                  <span class="px-3 py-1 rounded-full bg-white border border-gray-200 text-sm text-gray-700">Habay</span>
+                  <span class="px-3 py-1 rounded-full bg-white border border-gray-200 text-sm text-gray-700">Florenville</span>
+                               <span class="px-3 py-1 rounded-full bg-white border border-gray-200 text-sm text-gray-700">Et d'autres...</span>
+                </div>
+              </div>
+
+              <div>
+                <p class="text-sm font-semibold text-gray-800 mb-2">Expertises clés</p>
+                <div class="flex flex-wrap gap-2">
+                  <span class="px-3 py-1 rounded-full bg-blue-600 text-white text-sm">Châssis PVC & Alu</span>
+                  <span class="px-3 py-1 rounded-full bg-blue-600 text-white text-sm">Portes d'entrée</span>
+                  <span class="px-3 py-1 rounded-full bg-blue-600 text-white text-sm">Pergolas</span>
+                  <span class="px-3 py-1 rounded-full bg-blue-600 text-white text-sm">Vérandas</span>
+                  <span class="px-3 py-1 rounded-full bg-blue-600 text-white text-sm">Volets roulants</span>
+                  <span class="px-3 py-1 rounded-full bg-blue-600 text-white text-sm">Protections solaires</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- CTA (bleu) -->
+    <section class="py-12 bg-blue-600 relative overflow-hidden">
+      <div class="absolute inset-0 opacity-10">
+        <i class="fa-solid fa-helmet-safety absolute -top-10 -left-10 text-9xl text-white transform -rotate-12"></i>
+      </div>
+
+      <div class="container mx-auto px-4 text-center relative z-10">
+        <h2 class="text-3xl font-bold text-white mb-4">Un projet en tête ?</h2>
+        <p class="text-blue-100 text-lg mb-8 max-w-2xl mx-auto">
+          N'hésitez pas à nous contacter pour une étude gratuite de votre projet.
+          Nos conseillers se déplacent chez vous.
+        </p>
+        <a
+          href="#contact"
+          class="inline-block bg-white text-blue-600 hover:bg-gray-100 font-bold py-3 px-8 rounded-full shadow-lg transition transform hover:-translate-y-1"
+        >
+          Demander mon devis gratuit
+        </a>
+      </div>
+    </section>
+
+    <!-- Réalisations (9 images) -->
+    <section id="realisations" class="py-16 bg-white">
+      <div class="container mx-auto px-4">
+        <div class="text-center mb-16">
+          <h2 class="text-3xl font-bold text-gray-800">Nos Réalisations</h2>
+          <div class="w-20 h-1 bg-orange-500 mx-auto rounded mt-4"></div>
+          <p class="text-gray-600 mt-4">
+            Découvrez quelques projets réalisés par notre équipe.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+          <div class="overflow-hidden rounded-lg h-64">
+            <img loading="lazy" decoding="async" src="images/realisations/realisation_1.jpg" class="w-full h-full object-cover hover:scale-110 transition duration-500 cursor-pointer" alt="Réalisation 1">
+          </div>
+          <div class="overflow-hidden rounded-lg h-64">
+            <img loading="lazy" decoding="async" src="images/realisations/realisation_2.jpg" class="w-full h-full object-cover hover:scale-110 transition duration-500 cursor-pointer" alt="Réalisation 2">
+          </div>
+          <div class="overflow-hidden rounded-lg h-64">
+            <img loading="lazy" decoding="async" src="images/realisations/realisation_3.jpg" class="w-full h-full object-cover hover:scale-110 transition duration-500 cursor-pointer" alt="Réalisation 3">
+          </div>
+          <div class="overflow-hidden rounded-lg h-64">
+            <img loading="lazy" decoding="async" src="images/realisations/realisation_4.jpg" class="w-full h-full object-cover hover:scale-110 transition duration-500 cursor-pointer" alt="Réalisation 4">
+          </div>
+          <div class="overflow-hidden rounded-lg h-64">
+            <img loading="lazy" decoding="async" src="images/realisations/realisation_5.jpg" class="w-full h-full object-cover hover:scale-110 transition duration-500 cursor-pointer" alt="Réalisation 5">
+          </div>
+          <div class="overflow-hidden rounded-lg h-64">
+            <img loading="lazy" decoding="async" src="images/realisations/realisation_6.jpg" class="w-full h-full object-cover hover:scale-110 transition duration-500 cursor-pointer" alt="Réalisation 6">
+          </div>
+          <div class="overflow-hidden rounded-lg h-64">
+            <img loading="lazy" decoding="async" src="images/realisations/realisation_7.jpg" class="w-full h-full object-cover hover:scale-110 transition duration-500 cursor-pointer" alt="Réalisation 7">
+          </div>
+          <div class="overflow-hidden rounded-lg h-64">
+            <img loading="lazy" decoding="async" src="images/realisations/realisation_8.jpg" class="w-full h-full object-cover hover:scale-110 transition duration-500 cursor-pointer" alt="Réalisation 8">
+          </div>
+          <div class="overflow-hidden rounded-lg h-64">
+            <img loading="lazy" decoding="async" src="images/realisations/realisation_9.jpg" class="w-full h-full object-cover hover:scale-110 transition duration-500 cursor-pointer" alt="Réalisation 8">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ✅ Bloc Contact style ISO-LUX -->
+    <section class="py-10 bg-white">
+      <div class="container mx-auto px-4">
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 items-stretch">
+
+          <div class="bg-yellow-400 p-8 rounded-xl shadow-sm">
+            <h3 class="text-2xl font-bold text-gray-900 leading-snug">
+              Avez-vous des questions ?
+            </h3>
+            <p class="text-gray-900/80 mt-3">
+              Contactez-nous au bureau Isolux le plus proche de vous ou envoyez-nous
+              un message via notre formulaire de contact.
+            </p>
+
+            <a href="#contact"
+              class="inline-flex items-center gap-2 mt-6 bg-gray-900 text-white px-6 py-3 rounded-lg font-semibold hover:bg-gray-800 transition">
+              CONTACTEZ-NOUS <i class="fa-solid fa-arrow-right text-sm"></i>
+            </a>
+
+            <div class="mt-8 border-t border-gray-900/15 pt-6">
+              <div class="flex items-start gap-3">
+                <i class="fa-solid fa-calendar-days text-gray-900 mt-1"></i>
+                <div>
+                  <p class="font-bold text-gray-900">Temps de travail</p>
+                  <p class="text-gray-900/80 text-sm mt-1">
+                    Lundi–Samedi : 8h à 18h<br>
+                    Dimanche : Fermé
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="lg:col-span-2 bg-gray-50 rounded-xl p-8 border border-gray-100">
+            <p class="text-sm text-gray-500">Besoin d’un devis rapide ?</p>
+            <h3 class="text-3xl font-bold text-gray-900 mt-2">
+              Parlons de votre projet
+            </h3>
+            <p class="text-gray-600 mt-3 max-w-2xl">
+              Châssis, portes, pergolas, vérandas… Notre équipe vous accompagne de la
+              prise de mesures jusqu’à l’installation.
+            </p>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-6">
+              <div class="bg-white rounded-lg p-5 border border-gray-100">
+                <div class="flex items-center gap-3">
+                  <i class="fa-solid fa-phone text-orange-500"></i>
+                  <p class="font-semibold text-gray-900">+32 494 25 71 75</p>
+                </div>
+              </div>
+              <div class="bg-white rounded-lg p-5 border border-gray-100">
+                <div class="flex items-center gap-3">
+                  <i class="fa-solid fa-envelope text-orange-500"></i>
+                  <p class="font-semibold text-gray-900">info@iso-lux.be</p>
+                </div>
+              </div>
+              <div class="bg-white rounded-lg p-5 border border-gray-100">
+                <div class="flex items-center gap-3">
+                  <i class="fa-solid fa-location-dot text-orange-500"></i>
+                  <p class="font-semibold text-gray-900">6820 Muno, Belgique</p>
+                </div>
+              </div>
+            </div>
+
+            <a href="#contact"
+              class="inline-flex items-center gap-2 mt-7 bg-orange-500 hover:bg-orange-600 text-white px-7 py-3 rounded-lg font-bold transition">
+              Obtenez un devis <i class="fa-solid fa-file-signature"></i>
+            </a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact (form) -->
+    <!-- Contact (form) - Netlify Forms ready -->
+<section id="contact" class="py-16 bg-gray-50">
+  <div class="container mx-auto px-4">
+    <div class="bg-white rounded-2xl shadow-xl overflow-hidden flex flex-col md:flex-row">
+      <div class="bg-blue-900 text-white p-10 md:w-2/5 flex flex-col justify-between">
+        <div>
+          <h3 class="text-2xl font-bold mb-6">Contactez-nous</h3>
+          <p class="text-blue-200 mb-8">
+            Remplissez le formulaire et notre équipe vous répondra dans les 24 heures.
+          </p>
+
+          <div class="space-y-6">
+            <div class="flex items-start gap-4">
+              <div class="bg-blue-800 p-3 rounded-lg">
+                <i class="fa-solid fa-phone text-orange-400"></i>
+              </div>
+              <div>
+                <p class="text-sm text-blue-300">Téléphone</p>
+                <p class="font-semibold">+32 494 25 71 75</p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-4">
+              <div class="bg-blue-800 p-3 rounded-lg">
+                <i class="fa-solid fa-envelope text-orange-400"></i>
+              </div>
+              <div>
+                <p class="text-sm text-blue-300">Email</p>
+                <p class="font-semibold">info@iso-lux.be</p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-4">
+              <div class="bg-blue-800 p-3 rounded-lg">
+                <i class="fa-solid fa-location-dot text-orange-400"></i>
+              </div>
+              <div>
+                <p class="text-sm text-blue-300">Adresse</p>
+                <p class="font-semibold">
+                  Rue de l'Ermitage 12<br />
+                  6820 Muno, Belgique
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="mt-12">
+          <p class="text-sm text-blue-300 mb-2">Suivez-nous</p>
+          <div class="flex gap-4">
+            <a href="#" class="hover:text-orange-400 transition"><i class="fa-brands fa-facebook text-xl"></i></a>
+            <a href="#" class="hover:text-orange-400 transition"><i class="fa-brands fa-instagram text-xl"></i></a>
+            <a href="#" class="hover:text-orange-400 transition"><i class="fa-brands fa-linkedin text-xl"></i></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="p-10 md:w-3/5">
+        <form
+          name="quote"
+          method="POST"
+          data-netlify="true"
+          data-netlify-honeypot="bot-field"
+          action="/merci.html"
+          class="space-y-6"
+        >
+          <!-- Netlify required -->
+          <input type="hidden" name="form-name" value="quote" />
+
+          <!-- Honeypot (anti-spam) -->
+          <p class="hidden">
+            <label>Ne pas remplir : <input name="bot-field" /></label>
+          </p>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <div>
+              <label class="block text-sm font-medium text-gray-700 mb-1">Nom complet</label>
+              <input
+                type="text"
+                name="fullName"
+                autocomplete="name"
+                class="w-full bg-gray-50 border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-500 transition"
+                placeholder="Jean Dupont"
+                required
+              />
+            </div>
+
+            <div>
+              <label class="block text-sm font-medium text-gray-700 mb-1">Téléphone</label>
+              <input
+                type="tel"
+                name="phone"
+                autocomplete="tel"
+                inputmode="tel"
+                class="w-full bg-gray-50 border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-500 transition"
+                placeholder="+32 ..."
+                required
+              />
+            </div>
+          </div>
+
+          <div>
+            <label class="block text-sm font-medium text-gray-700 mb-1">Email</label>
+            <input
+              type="email"
+              name="email"
+              autocomplete="email"
+              class="w-full bg-gray-50 border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-500 transition"
+              placeholder="jean@exemple.com"
+              required
+            />
+          </div>
+
+          <div>
+            <label class="block text-sm font-medium text-gray-700 mb-1">Service souhaité</label>
+            <select
+              name="service"
+              class="w-full bg-gray-50 border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-500 transition"
+            >
+              <option>Châssis (PVC/ALU)</option>
+              <option>Portes d'entrée</option>
+              <option>Porte de garage</option>
+              <option>Protections solaires</option>
+              <option>Volets</option>
+              <option>Pergolas</option>
+              <option>Vérandas</option>
+              <option>Moustiquaires</option>
+              <option>Autre</option>
+            </select>
+          </div>
+
+          <div>
+            <label class="block text-sm font-medium text-gray-700 mb-1">Votre message</label>
+            <textarea
+              rows="4"
+              name="message"
+              class="w-full bg-gray-50 border border-gray-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-blue-500 transition"
+              placeholder="Décrivez votre projet..."
+              required
+            ></textarea>
+          </div>
+
+          <button
+            type="submit"
+            class="w-full bg-orange-500 hover:bg-orange-600 text-white font-bold py-3 rounded-lg shadow-md transition transform hover:scale-[1.02]"
+          >
+            Envoyer ma demande
+          </button>
+          
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+    <!-- ✅ Bottom CTA (jaune) -->
+    <section class="py-10 bg-white">
+      <div class="container mx-auto px-4">
+        <div class="bg-yellow-400 rounded-xl p-8 md:p-10 flex flex-col md:flex-row items-start md:items-center justify-between gap-6">
+          <div>
+            <h3 class="text-2xl md:text-3xl font-bold text-gray-900">
+              Besoin d’aide pour choisir ?
+            </h3>
+            <p class="text-gray-900/80 mt-2">
+              Contactez-nous pour des conseils personnalisés et une assistance experte.
+            </p>
+          </div>
+
+          <a href="#contact"
+            class="inline-flex items-center gap-2 bg-gray-900 text-white px-6 py-3 rounded-lg font-semibold hover:bg-gray-800 transition">
+            CONTACTEZ-NOUS <i class="fa-solid fa-arrow-right text-sm"></i>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    </main>
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-400 py-10 border-t border-gray-800">
+      <div class="container mx-auto px-4">
+        <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+          <div class="text-center md:text-left">
+            <span class="text-2xl font-bold text-white tracking-tight"
+              >ISO<span class="text-blue-500">LUX</span></span
+            >
+            <p class="mt-2 text-sm">Votre expert en menuiserie extérieure depuis 2010.</p>
+          </div>
+
+          <div class="flex gap-6 text-sm">
+            <a href="#" class="hover:text-white transition">Mentions légales</a>
+            <a href="#" class="hover:text-white transition">Confidentialité</a>
+            <a href="#" class="hover:text-white transition">Cookies</a>
+          </div>
+
+          <div class="text-sm text-center md:text-right">
+            <p>&copy; <span id="current-year"></span> ISOLUX. Tous droits reserves.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+  // Mobile menu
+  const btn = document.getElementById("mobile-menu-btn");
+  const menu = document.getElementById("mobile-menu");
+  btn?.addEventListener("click", () => {
+    menu.classList.toggle("hidden");
+    btn.setAttribute("aria-expanded", String(!menu.classList.contains("hidden")));
+  });
+  document.querySelectorAll("#mobile-menu a").forEach((link) => {
+    link.addEventListener("click", () => {
+      menu.classList.add("hidden");
+      btn?.setAttribute("aria-expanded", "false");
+    });
+  });
+
+  // ✅ Netlify form submit + animation (no blocking)
+  const quoteForm = document.querySelector('form[name="quote"]');
+  if (quoteForm) {
+    quoteForm.addEventListener("submit", async function (e) {
+      e.preventDefault();
+
+      const submitBtn = this.querySelector('button[type="submit"]');
+      const originalText = submitBtn?.innerText || "Envoyer ma demande";
+
+      // UX: loading
+      if (submitBtn) {
+        submitBtn.disabled = true;
+        submitBtn.innerText = "Envoi en cours...";
+        submitBtn.classList.add("opacity-80", "cursor-not-allowed");
+      }
+
+      try {
+        const formData = new FormData(this);
+
+        // Netlify expects x-www-form-urlencoded or multipart; this works fine:
+        const response = await fetch("/", {
+          method: "POST",
+          headers: { "Content-Type": "application/x-www-form-urlencoded" },
+          body: new URLSearchParams(formData).toString(),
+        });
+
+        if (!response.ok) throw new Error("Erreur envoi Netlify");
+
+        // Success animation
+        if (submitBtn) {
+          submitBtn.innerText = "Envoyé avec succès !";
+          submitBtn.classList.remove("bg-orange-500", "hover:bg-orange-600");
+          submitBtn.classList.add("bg-green-500");
+        }
+
+        // Reset + optional redirect
+        setTimeout(() => {
+          this.reset();
+          window.location.href = "/merci.html"; // ou commente si tu veux rester sur place
+        }, 900);
+      } catch (err) {
+        // Error UX
+        if (submitBtn) {
+          submitBtn.disabled = false;
+          submitBtn.innerText = "Erreur — réessayer";
+          submitBtn.classList.remove("bg-orange-500", "hover:bg-orange-600");
+          submitBtn.classList.add("bg-red-500");
+        }
+        console.error(err);
+      }
+    });
+  }
+
+  // Carousel helper
+  function initCarousel(containerId, thumbSelector) {
+    const carousel = document.getElementById(containerId);
+    if (!carousel) return;
+
+    const track = carousel.querySelector(".carousel-track");
+    const slides = Array.from(track.children);
+    const prevBtn = carousel.querySelector('[data-carousel="prev"]');
+    const nextBtn = carousel.querySelector('[data-carousel="next"]');
+
+    let index = 0;
+
+    function goTo(i) {
+      index = (i + slides.length) % slides.length;
+      track.style.transform = `translateX(-${index * 100}%)`;
+
+      document.querySelectorAll(thumbSelector).forEach((t) =>
+        t.classList.remove("ring-2", "ring-blue-500")
+      );
+      const activeThumb = document.querySelector(
+        `${thumbSelector}[data-slide="${index}"]`
+      );
+      if (activeThumb) activeThumb.classList.add("ring-2", "ring-blue-500");
+    }
+
+    prevBtn?.addEventListener("click", () => goTo(index - 1));
+    nextBtn?.addEventListener("click", () => goTo(index + 1));
+
+    document.querySelectorAll(thumbSelector).forEach((thumb) => {
+      thumb.addEventListener("click", () =>
+        goTo(parseInt(thumb.dataset.slide, 10))
+      );
+    });
+
+    goTo(0);
+  }
+
+  // Init carousels
+  initCarousel("prod1-carousel", ".prod1-thumb");
+  initCarousel("prod2-carousel", ".prod2-thumb");
+  initCarousel("prod3-carousel", ".prod3-thumb");
+  initCarousel("prod4-carousel", ".prod4-thumb");
+  initCarousel("prod5-carousel", ".prod5-thumb");
+  initCarousel("prod6-carousel", ".prod6-thumb");
+  initCarousel("prod7-carousel", ".prod7-thumb");
+  initCarousel("prod8-carousel", ".prod8-thumb");
+  const year = document.getElementById("current-year");
+  if (year) year.textContent = String(new Date().getFullYear());
+</script>
+  </body>
+</html>
+
+
+
+
+
+
