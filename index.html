@@ -1187,6 +1187,19 @@
     quoteForm.addEventListener("submit", async function (e) {
       e.preventDefault();
 
+      // Validate that required text fields are not blank or whitespace-only
+      const requiredTextFields = this.querySelectorAll("input[required], textarea[required]");
+      for (const field of requiredTextFields) {
+        if (!field.value.trim()) {
+          field.focus();
+          field.setCustomValidity("Ce champ ne peut pas être vide.");
+          field.reportValidity();
+          field.addEventListener("input", () => field.setCustomValidity(""), { once: true });
+          return;
+        }
+        field.setCustomValidity("");
+      }
+
       const submitBtn = this.querySelector('button[type="submit"]');
       const originalText = submitBtn?.innerText || "Envoyer ma demande";
 
