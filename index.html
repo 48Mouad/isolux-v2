@@ -14,27 +14,17 @@
     <meta name="description" content="ISOLUX, entreprise de menuiserie extérieure en Région wallonne (Belgique), dans la province de Luxembourg : châssis PVC et aluminium, portes d'entrée, portes de garage, vérandas, pergolas, volets et protections solaires. Devis gratuit." />
     <meta name="robots" content="index,follow" />
     <meta name="theme-color" content="#1e3a8a" />
+    <link rel="manifest" href="/manifest.json" />
+    <link rel="apple-touch-icon" href="/images/logos/isolux_logo.jpg" />
     <link rel="preconnect" href="https://images.unsplash.com" crossorigin />
     <link rel="preconnect" href="https://cdnjs.cloudflare.com" crossorigin />
+    <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin />
+    <link rel="preload" as="image" fetchpriority="high" href="https://images.unsplash.com/photo-1600585154340-be6161a56a0c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1920&q=80" />
     <title>ISOLUX | Menuiserie extérieure en Région wallonne (Belgique) - Province de Luxembourg</title>
 
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-      tailwind.config = {
-        theme: {
-          extend: {
-            colors: {
-              brandBlue: "#1e3a8a",
-              brandOrange: "#f97316"
-            }
-          }
-        }
-      };
-    </script>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-    />
+    <link rel="stylesheet" href="/tailwind.min.css" />
+    <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'" />
+    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" /></noscript>
 
     <style>
       body {
@@ -426,14 +416,14 @@
 
                 <button type="button"
                   class="absolute left-2 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white text-gray-800 rounded-full w-9 h-9 flex items-center justify-center shadow"
-                  data-carousel="prev">
-                  <i class="fa-solid fa-chevron-left text-sm"></i>
+                  data-carousel="prev" aria-label="Précédent">
+                  <i class="fa-solid fa-chevron-left text-sm" aria-hidden="true"></i>
                 </button>
 
                 <button type="button"
                   class="absolute right-2 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white text-gray-800 rounded-full w-9 h-9 flex items-center justify-center shadow"
-                  data-carousel="next">
-                  <i class="fa-solid fa-chevron-right text-sm"></i>
+                  data-carousel="next" aria-label="Suivant">
+                  <i class="fa-solid fa-chevron-right text-sm" aria-hidden="true"></i>
                 </button>
               </div>
 
@@ -478,14 +468,14 @@
 
                 <button type="button"
                   class="absolute left-2 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white text-gray-800 rounded-full w-9 h-9 flex items-center justify-center shadow"
-                  data-carousel="prev">
-                  <i class="fa-solid fa-chevron-left text-sm"></i>
+                  data-carousel="prev" aria-label="Précédent">
+                  <i class="fa-solid fa-chevron-left text-sm" aria-hidden="true"></i>
                 </button>
 
                 <button type="button"
                   class="absolute right-2 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white text-gray-800 rounded-full w-9 h-9 flex items-center justify-center shadow"
-                  data-carousel="next">
-                  <i class="fa-solid fa-chevron-right text-sm"></i>
+                  data-carousel="next" aria-label="Suivant">
+                  <i class="fa-solid fa-chevron-right text-sm" aria-hidden="true"></i>
                 </button>
               </div>
 
@@ -530,14 +520,14 @@
 
                 <button type="button"
                   class="absolute left-2 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white text-gray-800 rounded-full w-9 h-9 flex items-center justify-center shadow"
-                  data-carousel="prev">
-                  <i class="fa-solid fa-chevron-left text-sm"></i>
+                  data-carousel="prev" aria-label="Précédent">
+                  <i class="fa-solid fa-chevron-left text-sm" aria-hidden="true"></i>
                 </button>
 
                 <button type="button"
                   class="absolute right-2 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white text-gray-800 rounded-full w-9 h-9 flex items-center justify-center shadow"
-                  data-carousel="next">
-                  <i class="fa-solid fa-chevron-right text-sm"></i>
+                  data-carousel="next" aria-label="Suivant">
+                  <i class="fa-solid fa-chevron-right text-sm" aria-hidden="true"></i>
                 </button>
               </div>
 
@@ -583,14 +573,14 @@
 
                 <button type="button"
                   class="absolute left-2 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white text-gray-800 rounded-full w-9 h-9 flex items-center justify-center shadow"
-                  data-carousel="prev">
-                  <i class="fa-solid fa-chevron-left text-sm"></i>
+                  data-carousel="prev" aria-label="Précédent">
+                  <i class="fa-solid fa-chevron-left text-sm" aria-hidden="true"></i>
                 </button>
 
                 <button type="button"
                   class="absolute right-2 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white text-gray-800 rounded-full w-9 h-9 flex items-center justify-center shadow"
-                  data-carousel="next">
-                  <i class="fa-solid fa-chevron-right text-sm"></i>
+                  data-carousel="next" aria-label="Suivant">
+                  <i class="fa-solid fa-chevron-right text-sm" aria-hidden="true"></i>
                 </button>
               </div>
 
@@ -637,14 +627,14 @@
 
                 <button type="button"
                   class="absolute left-2 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white text-gray-800 rounded-full w-9 h-9 flex items-center justify-center shadow"
-                  data-carousel="prev">
-                  <i class="fa-solid fa-chevron-left text-sm"></i>
+                  data-carousel="prev" aria-label="Précédent">
+                  <i class="fa-solid fa-chevron-left text-sm" aria-hidden="true"></i>
                 </button>
 
                 <button type="button"
                   class="absolute right-2 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white text-gray-800 rounded-full w-9 h-9 flex items-center justify-center shadow"
-                  data-carousel="next">
-                  <i class="fa-solid fa-chevron-right text-sm"></i>
+                  data-carousel="next" aria-label="Suivant">
+                  <i class="fa-solid fa-chevron-right text-sm" aria-hidden="true"></i>
                 </button>
               </div>
 
@@ -690,14 +680,14 @@
 
                 <button type="button"
                   class="absolute left-2 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white text-gray-800 rounded-full w-9 h-9 flex items-center justify-center shadow"
-                  data-carousel="prev">
-                  <i class="fa-solid fa-chevron-left text-sm"></i>
+                  data-carousel="prev" aria-label="Précédent">
+                  <i class="fa-solid fa-chevron-left text-sm" aria-hidden="true"></i>
                 </button>
 
                 <button type="button"
                   class="absolute right-2 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white text-gray-800 rounded-full w-9 h-9 flex items-center justify-center shadow"
-                  data-carousel="next">
-                  <i class="fa-solid fa-chevron-right text-sm"></i>
+                  data-carousel="next" aria-label="Suivant">
+                  <i class="fa-solid fa-chevron-right text-sm" aria-hidden="true"></i>
                 </button>
               </div>
 
@@ -991,7 +981,7 @@
                 <i class="fa-solid fa-phone text-orange-400"></i>
               </div>
               <div>
-                <p class="text-sm text-blue-300">Téléphone</p>
+                <p class="text-sm text-blue-200">Téléphone</p>
                 <p class="font-semibold">+32 494 25 71 75</p>
               </div>
             </div>
@@ -1001,7 +991,7 @@
                 <i class="fa-solid fa-envelope text-orange-400"></i>
               </div>
               <div>
-                <p class="text-sm text-blue-300">Email</p>
+                <p class="text-sm text-blue-200">Email</p>
                 <p class="font-semibold">info@iso-lux.be</p>
               </div>
             </div>
@@ -1011,7 +1001,7 @@
                 <i class="fa-solid fa-location-dot text-orange-400"></i>
               </div>
               <div>
-                <p class="text-sm text-blue-300">Adresse</p>
+                <p class="text-sm text-blue-200">Adresse</p>
                 <p class="font-semibold">
                   Rue de l'Ermitage 12<br />
                   6820 Muno, Belgique
@@ -1022,11 +1012,11 @@
         </div>
 
         <div class="mt-12">
-          <p class="text-sm text-blue-300 mb-2">Suivez-nous</p>
+          <p class="text-sm text-blue-200 mb-2">Suivez-nous</p>
           <div class="flex gap-4">
-            <a href="#" class="hover:text-orange-400 transition"><i class="fa-brands fa-facebook text-xl"></i></a>
-            <a href="#" class="hover:text-orange-400 transition"><i class="fa-brands fa-instagram text-xl"></i></a>
-            <a href="#" class="hover:text-orange-400 transition"><i class="fa-brands fa-linkedin text-xl"></i></a>
+            <a href="#" aria-label="Facebook" class="hover:text-orange-400 transition"><i class="fa-brands fa-facebook text-xl" aria-hidden="true"></i></a>
+            <a href="#" aria-label="Instagram" class="hover:text-orange-400 transition"><i class="fa-brands fa-instagram text-xl" aria-hidden="true"></i></a>
+            <a href="#" aria-label="LinkedIn" class="hover:text-orange-400 transition"><i class="fa-brands fa-linkedin text-xl" aria-hidden="true"></i></a>
           </div>
         </div>
       </div>
